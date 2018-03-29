@@ -1,1 +1,3 @@
-console.log('hi');
+let droneId = 5;
+
+console.log(window.droneId);
