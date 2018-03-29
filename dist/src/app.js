@@ -1,18 +1,29 @@
 'use strict';
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var Drone = function Drone(id, name) {
-    _classCallCheck(this, Drone);
+var Drone = function () {
+    function Drone(id, name) {
+        _classCallCheck(this, Drone);
 
-    this.id = id;
-    this.name = name;
-};
+        this.id = id;
+        this.name = name;
+    }
 
-Drone.maxHeight = 2000;
+    _createClass(Drone, [{
+        key: 'fly',
+        value: function fly() {
+            console.log('Drone: ' + this.id + ' is flying');
+        }
+    }]);
+
+    return Drone;
+}();
 
 var drone = new Drone('A123', 'Flyer');
 var drone2 = new Drone('B456', 'Sinsajo');
-console.log(drone.id + '  ' + drone2.id);
-console.log(Drone.maxHeight);
+drone.fly();
+drone2.fly();
 //# sourceMappingURL=app.js.map

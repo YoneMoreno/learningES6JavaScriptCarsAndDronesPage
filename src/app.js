@@ -3,11 +3,13 @@ class Drone {
         this.id = id;
         this.name = name;
     }
+    fly(){
+        console.log('Drone: ' + this.id + ' is flying');
+    }
 }
 
-Drone.maxHeight = 2000;
 
 let drone = new Drone('A123', 'Flyer');
 let drone2 = new Drone('B456', 'Sinsajo');
-console.log(drone.id + '  ' + drone2.id);
-console.log(Drone.maxHeight);
+drone.fly();
+drone2.fly();
