@@ -1,3 +1,3 @@
-let droneId = 5;
+ droneId = 5;
 
 console.log(window.droneId);
