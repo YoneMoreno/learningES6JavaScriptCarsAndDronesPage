@@ -5,31 +5,26 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var Drone = function () {
-    function Drone(id, name) {
+    function Drone(id) {
         _classCallCheck(this, Drone);
 
-        this.id = id;
-        this.name = name;
+        this._id = id;
     }
 
     _createClass(Drone, [{
-        key: 'fly',
-        value: function fly() {
-            console.log('Drone: ' + this.id + ' is flying');
-        }
-    }], [{
-        key: 'getCompany',
-        value: function getCompany() {
-            console.log('in getCompany');
+        key: 'id',
+        get: function get() {
+            return this._id;
+        },
+        set: function set(value) {
+            this._id = value;
         }
     }]);
 
     return Drone;
 }();
 
-var drone = new Drone('A123', 'Flyer');
-var drone2 = new Drone('B456', 'Sinsajo');
-drone.fly();
-drone2.fly();
-Drone.getCompany();
+var drone = new Drone('A1');
+drone.id = '>Z9';
+console.log('ID: ' + drone.id);
 //# sourceMappingURL=app.js.map

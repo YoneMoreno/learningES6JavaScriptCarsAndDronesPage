@@ -1,21 +1,16 @@
 class Drone {
-    constructor(id, name) {
-        this.id = id;
-        this.name = name;
+    constructor(id) {
+        this._id = id;
     }
-
-    static getCompany(){
-        console.log('in getCompany');
+    get id(){
+        return this._id;
     }
-
-    fly(){
-        console.log('Drone: ' + this.id + ' is flying');
+    set id(value){
+        this._id = value;
     }
 }
 
+let drone = new Drone('A1');
+drone.id = '>Z9';
+console.log('ID: ' + drone.id);
 
-let drone = new Drone('A123', 'Flyer');
-let drone2 = new Drone('B456', 'Sinsajo');
-drone.fly();
-drone2.fly();
-Drone.getCompany();
