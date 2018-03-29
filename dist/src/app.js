@@ -9,6 +9,10 @@ var Drone = function Drone(id, name) {
     this.name = name;
 };
 
+Drone.maxHeight = 2000;
+
 var drone = new Drone('A123', 'Flyer');
-console.log(drone + ' ID: ' + drone.id + ' name: ' + drone.name);
+var drone2 = new Drone('B456', 'Sinsajo');
+console.log(drone.id + '  ' + drone2.id);
+console.log(Drone.maxHeight);
 //# sourceMappingURL=app.js.map
