@@ -5,9 +5,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 var Drone = function Drone(id, name) {
     _classCallCheck(this, Drone);
 
-    console.log('ID: ' + id + ' name: ' + name);
+    this.id = id;
+    this.name = name;
 };
 
 var drone = new Drone('A123', 'Flyer');
-console.log(drone instanceof Drone);
+console.log(drone + ' ID: ' + drone.id + ' name: ' + drone.name);
 //# sourceMappingURL=app.js.map

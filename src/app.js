@@ -1,8 +1,9 @@
 class Drone {
     constructor(id, name) {
-        console.log('ID: ' + id + ' name: ' + name);
+        this.id = id;
+        this.name = name;
     }
 }
 
 let drone = new Drone('A123', 'Flyer');
-console.log(drone instanceof Drone);
+console.log(drone + ' ID: ' + drone.id + ' name: ' + drone.name);
