@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../src/app.js"],"names":["droneId","console","log","window"],"mappings":";;AAACA,UAAU,CAAV;;AAEDC,QAAQC,GAAR,CAAYC,OAAOH,OAAnB","file":"app.js","sourcesContent":[" droneId = 5;\r\n\r\nconsole.log(window.droneId);"]}
+{"version":3,"sources":["../../src/app.js"],"names":["Drone","drone","console","log"],"mappings":";;;;IAAMA,K;;;;AAIN,IAAIC,QAAQ,IAAID,KAAJ,EAAZ;AACAE,QAAQC,GAAR,CAAYF,iBAAiBD,KAA7B","file":"app.js","sourcesContent":["class Drone{\r\n\r\n}\r\n\r\nlet drone = new Drone();\r\nconsole.log(drone instanceof Drone);"]}

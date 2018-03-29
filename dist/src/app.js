@@ -1,6 +1,11 @@
 "use strict";
 
-droneId = 5;
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-console.log(window.droneId);
+var Drone = function Drone() {
+  _classCallCheck(this, Drone);
+};
+
+var drone = new Drone();
+console.log(drone instanceof Drone);
 //# sourceMappingURL=app.js.map
