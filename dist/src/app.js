@@ -17,6 +17,11 @@ var Drone = function () {
         value: function fly() {
             console.log('Drone: ' + this.id + ' is flying');
         }
+    }], [{
+        key: 'getCompany',
+        value: function getCompany() {
+            console.log('in getCompany');
+        }
     }]);
 
     return Drone;
@@ -26,4 +31,5 @@ var drone = new Drone('A123', 'Flyer');
 var drone2 = new Drone('B456', 'Sinsajo');
 drone.fly();
 drone2.fly();
+Drone.getCompany();
 //# sourceMappingURL=app.js.map
