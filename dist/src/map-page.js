@@ -42,7 +42,7 @@ var MapPage = exports.MapPage = function (_Page) {
     }, {
         key: "getElementString",
         value: function getElementString() {
-            return "<div style=\"margin: 20px;\"><h3>Map</h3></div>";
+            return "<div style=\"margin: 20px;\"><h3>Cars map</h3></div>";
         }
     }]);
 

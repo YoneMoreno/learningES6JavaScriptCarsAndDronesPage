@@ -675,6 +675,7 @@
         <item url="file://$PROJECT_DIR$/dist/src/home-page.js" />
         <item url="file://$PROJECT_DIR$/dist/src/ui/google-maps.js" />
         <item url="file://$PROJECT_DIR$/dist/src/framework/application-base.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/drone-page.js" />
         <item url="file://$PROJECT_DIR$/dist/src/cars-page.js" />
         <item url="file://$PROJECT_DIR$/dist/src/framework/page.js" />
         <item url="file://$PROJECT_DIR$/dist/src/map-page.js" />
@@ -1591,6 +1592,7 @@
       <root url="file://$PROJECT_DIR$/dist/src/home-page.js" />
       <root url="file://$PROJECT_DIR$/dist/src/ui/google-maps.js" />
       <root url="file://$PROJECT_DIR$/dist/src/framework/application-base.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/drone-page.js" />
       <root url="file://$PROJECT_DIR$/dist/src/cars-page.js" />
       <root url="file://$PROJECT_DIR$/dist/src/framework/page.js" />
       <root url="file://$PROJECT_DIR$/dist/src/map-page.js" />

@@ -5,6 +5,7 @@ import {ApplicationBase} from './framework/application-base.js';
 import {HomePage} from './home-page.js';
 import {CarsPage} from "./cars-page.js";
 import {MapPage} from "./map-page.js";
+import {DronePage} from "./drone-page.js";
 
 export class App extends ApplicationBase {
 
@@ -15,7 +16,7 @@ export class App extends ApplicationBase {
 
         this.addRoute('Home', new HomePage(), true);
         this.addRoute('Cars', new CarsPage());
-        this.addRoute('Drones', null);
+        this.addRoute('Drones', new DronePage());
         this.addRoute('Map', new MapPage());
 
     }

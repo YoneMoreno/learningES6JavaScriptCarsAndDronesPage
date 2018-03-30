@@ -21,6 +21,8 @@ var _carsPage = require('./cars-page.js');
 
 var _mapPage = require('./map-page.js');
 
+var _dronePage = require('./drone-page.js');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -42,7 +44,7 @@ var App = exports.App = function (_ApplicationBase) {
 
         _this.addRoute('Home', new _homePage.HomePage(), true);
         _this.addRoute('Cars', new _carsPage.CarsPage());
-        _this.addRoute('Drones', null);
+        _this.addRoute('Drones', new _dronePage.DronePage());
         _this.addRoute('Map', new _mapPage.MapPage());
 
         return _this;
