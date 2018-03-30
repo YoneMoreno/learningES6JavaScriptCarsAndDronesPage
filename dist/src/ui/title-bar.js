@@ -24,13 +24,48 @@ var TitleBar = exports.TitleBar = function (_BaseElement) {
         var _this = _possibleConstructorReturn(this, (TitleBar.__proto__ || Object.getPrototypeOf(TitleBar)).call(this));
 
         _this.title = title;
+        _this.links = [];
         return _this;
     }
 
     _createClass(TitleBar, [{
+        key: "addLink",
+        value: function addLink(title, href) {
+            this.links.push({
+                title: title,
+                href: href
+            });
+        }
+    }, {
         key: "getElementString",
         value: function getElementString() {
-            return "\n        <div class=\"mdl-layout mdl-js-layout mdl-layout--fixed-header\">\n            <header class=\"mdl-layout__header\">\n                <div class=\"mdl-layout__header-row\">\n                  <!-- Title -->\n                  <span class=\"mdl-layout-title\">" + this.title + "</span>\n                  <!-- Add spacer, to align navigation to the right -->\n                  <div class=\"mdl-layout-spacer\"></div>\n                  <!-- Navigation. We hide it in small screens. -->\n                  <nav class=\"mdl-navigation mdl-layout--large-screen-only\">\n                    <a class=\"mdl-navigation__link\" href=\"\">Link</a>\n                    <a class=\"mdl-navigation__link\" href=\"\">Link</a>\n                    <a class=\"mdl-navigation__link\" href=\"\">Link</a>\n                    <a class=\"mdl-navigation__link\" href=\"\">Link</a>\n                </nav>\n            </div>\n    </header>\n      <div class=\"mdl-layout__drawer\">\n        <span class=\"mdl-layout-title\">Title</span>\n        <nav class=\"mdl-navigation\">\n          <a class=\"mdl-navigation__link\" href=\"\">Link</a>\n          <a class=\"mdl-navigation__link\" href=\"\">Link</a>\n          <a class=\"mdl-navigation__link\" href=\"\">Link</a>\n          <a class=\"mdl-navigation__link\" href=\"\">Link</a>\n        </nav>\n      </div>\n      <main class=\"mdl-layout__content\">\n        <div class=\"page-content\"><!-- Your content goes here --></div>\n      </main>\n    </div>\n        ";
+            var links = '';
+            var _iteratorNormalCompletion = true;
+            var _didIteratorError = false;
+            var _iteratorError = undefined;
+
+            try {
+                for (var _iterator = this.links[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                    var link = _step.value;
+
+                    links += "<a class=\"mdl-navigation__link\"\n                href=\"" + link.href + "\">" + link.title + "</a>\n";
+                }
+            } catch (err) {
+                _didIteratorError = true;
+                _iteratorError = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion && _iterator.return) {
+                        _iterator.return();
+                    }
+                } finally {
+                    if (_didIteratorError) {
+                        throw _iteratorError;
+                    }
+                }
+            }
+
+            return "\n        <div class=\"mdl-layout mdl-js-layout mdl-layout--fixed-header\">\n            <header class=\"mdl-layout__header\">\n                <div class=\"mdl-layout__header-row\">\n                  <!-- Title -->\n                  <span class=\"mdl-layout-title\">" + this.title + "</span>\n                  <!-- Add spacer, to align navigation to the right -->\n                  <div class=\"mdl-layout-spacer\"></div>\n                  <!-- Navigation. We hide it in small screens. -->\n                  <nav class=\"mdl-navigation mdl-layout--large-screen-only\">\n                    " + links + "\n                </nav>\n            </div>\n    </header>\n      <div class=\"mdl-layout__drawer\">\n        <span class=\"mdl-layout-title\">" + this.title + "</span>\n        <nav class=\"mdl-navigation\">\n          " + links + "\n        </nav>\n      </div>\n      <main class=\"mdl-layout__content\">\n        <div class=\"page-content\"><!-- Your content goes here --></div>\n      </main>\n    </div>\n        ";
         }
     }]);
 

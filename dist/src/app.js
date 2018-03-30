@@ -7,6 +7,10 @@ var _image = require("./ui/image.js");
 var _titleBar = require("./ui/title-bar.js");
 
 var titleBar = new _titleBar.TitleBar('App');
+titleBar.addLink('Home', '');
+titleBar.addLink('Cars', '');
+titleBar.addLink('Drones', '');
+titleBar.addLink('Map', '');
 titleBar.appendToElement($('body'));
 
 // let b = new Button('Click me');
