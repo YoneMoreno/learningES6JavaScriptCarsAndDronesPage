@@ -666,6 +666,7 @@
         <item url="file://$PROJECT_DIR$/dist/node_modules/.staging/jquery-9bf03e04/src/var/document.js" />
         <item url="file://$PROJECT_DIR$/dist/src/ui/title-bar.js" />
         <item url="file://$PROJECT_DIR$/dist/node_modules/.staging/jquery-9bf03e04/src/var/support.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/ui/data-table.js" />
         <item url="file://$PROJECT_DIR$/dist/node_modules/.staging/jquery-9bf03e04/src/var/rcssNum.js" />
         <item url="file://$PROJECT_DIR$/dist/node_modules/.staging/jquery-9bf03e04/src/var/class2type.js" />
         <item url="file://$PROJECT_DIR$/dist/node_modules/.staging/jquery-9bf03e04/src/var/hasOwn.js" />
@@ -1573,6 +1574,7 @@
       <root url="file://$PROJECT_DIR$/dist/node_modules/.staging/jquery-9bf03e04/src/var/document.js" />
       <root url="file://$PROJECT_DIR$/dist/src/ui/title-bar.js" />
       <root url="file://$PROJECT_DIR$/dist/node_modules/.staging/jquery-9bf03e04/src/var/support.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/ui/data-table.js" />
       <root url="file://$PROJECT_DIR$/dist/node_modules/.staging/jquery-9bf03e04/src/var/rcssNum.js" />
       <root url="file://$PROJECT_DIR$/dist/node_modules/.staging/jquery-9bf03e04/src/var/class2type.js" />
       <root url="file://$PROJECT_DIR$/dist/node_modules/.staging/jquery-9bf03e04/src/var/hasOwn.js" />
