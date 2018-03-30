@@ -45,6 +45,11 @@ var Car = function (_Vehicle) {
             console.log('STARTING car');
             _get(Car.prototype.__proto__ || Object.getPrototypeOf(Car.prototype), 'start', this).call(this);
         }
+    }], [{
+        key: 'getCompanyName',
+        value: function getCompanyName() {
+            console.log('CAR company');
+        }
     }]);
 
     return Car;
