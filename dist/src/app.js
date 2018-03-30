@@ -30,7 +30,10 @@ var Car = function (_Vehicle2) {
     function Car() {
         _classCallCheck(this, Car);
 
-        return _possibleConstructorReturn(this, (Car.__proto__ || Object.getPrototypeOf(Car)).call(this));
+        var _this2 = _possibleConstructorReturn(this, (Car.__proto__ || Object.getPrototypeOf(Car)).call(this));
+
+        _this2.gpsEnabled = false;
+        return _this2;
     }
 
     return Car;
