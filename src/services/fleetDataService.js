@@ -1,11 +1,13 @@
 import {Car} from "../classes/Car.js";
 import {Drone} from "../classes/Drone.js";
+import {DataError} from "./DataError.js";
 
 export class FleetDataService {
 
     constructor() {
         this.cars = [];
         this.drones = [];
+        this.errors = [];
     }
 
     loadData(fleet) {
@@ -18,6 +20,10 @@ export class FleetDataService {
                 case 'drone':
                     let drone = this.loadDrone(data);
                     this.drones.push(drone);
+                    break;
+                default:
+                    let e = new DataError('invalid vehicle type', data);
+                    this.errors.push(e);
                     break;
             }
         }

@@ -11,6 +11,8 @@ var _Car = require("../classes/Car.js");
 
 var _Drone = require("../classes/Drone.js");
 
+var _DataError = require("./DataError.js");
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var FleetDataService = exports.FleetDataService = function () {
@@ -19,6 +21,7 @@ var FleetDataService = exports.FleetDataService = function () {
 
         this.cars = [];
         this.drones = [];
+        this.errors = [];
     }
 
     _createClass(FleetDataService, [{
@@ -40,6 +43,10 @@ var FleetDataService = exports.FleetDataService = function () {
                         case 'drone':
                             var drone = this.loadDrone(data);
                             this.drones.push(drone);
+                            break;
+                        default:
+                            var e = new _DataError.DataError('invalid vehicle type', data);
+                            this.errors.push(e);
                             break;
                     }
                 }
