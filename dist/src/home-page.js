@@ -15,6 +15,8 @@ var _button = require('./ui/button.js');
 
 var _page = require('./framework/page.js');
 
+var _app = require('./app.js');
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -42,7 +44,9 @@ var HomePage = exports.HomePage = function (_Page) {
             var b = new _button.Button('Self Driving Cars');
             b.setStyleString(styleString);
             b.appendToElement(this.element);
-            //b.element.click(() => application.activateRoute('Cars'));
+            b.element.click(function () {
+                return _app.application.activateRoute('Cars');
+            });
 
             b = new _button.Button('Drones');
             b.setStyleString(styleString);
