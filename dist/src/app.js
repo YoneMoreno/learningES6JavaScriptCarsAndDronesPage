@@ -1,4 +1,6 @@
-"use strict";
+'use strict';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
@@ -6,39 +8,33 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var Vehicle = function Vehicle() {
-    _classCallCheck(this, Vehicle);
-
-    this.gpsEnabled = true;
-};
-
-var Drone = function (_Vehicle) {
-    _inherits(Drone, _Vehicle);
-
-    function Drone() {
-        _classCallCheck(this, Drone);
-
-        return _possibleConstructorReturn(this, (Drone.__proto__ || Object.getPrototypeOf(Drone)).apply(this, arguments));
+var Vehicle = function () {
+    function Vehicle() {
+        _classCallCheck(this, Vehicle);
     }
 
-    return Drone;
-}(Vehicle);
+    _createClass(Vehicle, [{
+        key: 'start',
+        value: function start() {
+            console.log('starting vehicle');
+        }
+    }]);
 
-var Car = function (_Vehicle2) {
-    _inherits(Car, _Vehicle2);
+    return Vehicle;
+}();
+
+var Car = function (_Vehicle) {
+    _inherits(Car, _Vehicle);
 
     function Car() {
         _classCallCheck(this, Car);
 
-        var _this2 = _possibleConstructorReturn(this, (Car.__proto__ || Object.getPrototypeOf(Car)).call(this));
-
-        _this2.gpsEnabled = false;
-        return _this2;
+        return _possibleConstructorReturn(this, (Car.__proto__ || Object.getPrototypeOf(Car)).apply(this, arguments));
     }
 
     return Car;
 }(Vehicle);
 
 var c = new Car();
-console.log(c.gpsEnabled);
+c.start();
 //# sourceMappingURL=app.js.map
