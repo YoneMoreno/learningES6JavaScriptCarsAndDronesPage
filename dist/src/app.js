@@ -37,8 +37,8 @@ var Car = function (_Vehicle) {
     _createClass(Car, [{
         key: 'start',
         value: function start() {
-            _get(Car.prototype.__proto__ || Object.getPrototypeOf(Car.prototype), 'start', this).call(this);
             console.log('STARTING car');
+            _get(Car.prototype.__proto__ || Object.getPrototypeOf(Car.prototype), 'start', this).call(this);
         }
     }]);
 
