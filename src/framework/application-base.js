@@ -29,6 +29,11 @@ export class ApplicationBase {
     show(element) {
         this.titleBar.appendToElement(element);
 
+        this.titleBar.element.find('.mdl-navigation__link').click((event) => {
+            let route = event.target.innerHTML;
+            this.activateRoute(route);
+        });
+
         if (this.defaultRoute) {
             this.activateRoute(this.defaultRoute);
         }

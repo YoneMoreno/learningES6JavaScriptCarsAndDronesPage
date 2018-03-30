@@ -45,7 +45,14 @@ var ApplicationBase = exports.ApplicationBase = function () {
     }, {
         key: 'show',
         value: function show(element) {
+            var _this = this;
+
             this.titleBar.appendToElement(element);
+
+            this.titleBar.element.find('.mdl-navigation__link').click(function (event) {
+                var route = event.target.innerHTML;
+                _this.activateRoute(route);
+            });
 
             if (this.defaultRoute) {
                 this.activateRoute(this.defaultRoute);

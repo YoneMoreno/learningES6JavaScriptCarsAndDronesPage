@@ -48,7 +48,7 @@ var TitleBar = exports.TitleBar = function (_BaseElement) {
                 for (var _iterator = this.links[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
                     var link = _step.value;
 
-                    links += "<a class=\"mdl-navigation__link\"\n                href=\"" + link.href + "\">" + link.title + "</a>\n";
+                    links += "<a class=\"mdl-navigation__link\">" + link.title + "</a>\n";
                 }
             } catch (err) {
                 _didIteratorError = true;
