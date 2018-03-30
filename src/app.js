@@ -6,5 +6,9 @@ import {FleetDataService} from "./services/fleetDataService.js";
 
 let dataService = new FleetDataService();
 dataService.loadData(fleet);
-console.log(dataService.cars);
-console.log(dataService.drones);
+for(let car of dataService.cars){
+    console.log(car.license);
+}
+for(let drone of dataService.drones){
+    console.log(drone.license);
+}
