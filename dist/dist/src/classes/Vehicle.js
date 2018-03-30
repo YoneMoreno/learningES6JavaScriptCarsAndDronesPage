@@ -4,7 +4,11 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+        throw new TypeError("Cannot call a class as a function");
+    }
+}
 
 var Vehicle = exports.Vehicle = function Vehicle(license, model, latLong) {
     _classCallCheck(this, Vehicle);
@@ -13,4 +17,5 @@ var Vehicle = exports.Vehicle = function Vehicle(license, model, latLong) {
     this.model = model;
     this.latLong = latLong;
 };
-//# sourceMappingURL=vehicle.js.map
+//# sourceMappingURL=Vehicle.js.map
+//# sourceMappingURL=Vehicle.js.map

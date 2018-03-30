@@ -1,17 +1,17 @@
-"use strict";
+'use strict';
 
-var _Car = require("./classes/Car.js");
+var _car = require('./classes/car.js');
 
-var _Drone = require("./classes/Drone.js");
+var _drone = require('./classes/drone.js');
 
-var _fleetData = require("./fleet-data.js");
+var _fleetData = require('./fleet-data.js');
 
-var _fleetDataService = require("./services/fleetDataService.js");
+var _fleetDataService = require('./services/fleet-data-service.js');
 
 var dataService = new _fleetDataService.FleetDataService();
 dataService.loadData(_fleetData.fleet);
 
-//let car = dataService.getCarByLicense('AT2020');
+//let car = dataService.getCarByLicense('AT9900');
 
 //let cars = dataService.getCarsSortedByLicense();
 

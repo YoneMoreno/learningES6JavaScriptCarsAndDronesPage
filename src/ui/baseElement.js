@@ -11,7 +11,7 @@ export class BaseElement{
     }
 
     createElement(){
-        let s = getElementString();
+        let s = this.getElementString();
         this.element = $(s);
     }
 

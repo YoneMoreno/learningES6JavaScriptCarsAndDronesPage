@@ -1,11 +1,11 @@
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.Drone = undefined;
 
-var _Vehicle2 = require("./Vehicle.js");
+var _vehicle = require('./vehicle.js');
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -27,5 +27,5 @@ var Drone = exports.Drone = function (_Vehicle) {
     }
 
     return Drone;
-}(_Vehicle2.Vehicle);
-//# sourceMappingURL=Drone.js.map
+}(_vehicle.Vehicle);
+//# sourceMappingURL=drone.js.map

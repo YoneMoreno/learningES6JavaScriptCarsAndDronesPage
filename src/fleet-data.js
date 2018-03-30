@@ -32,22 +32,6 @@ export let fleet = [
         latLong: '40.773272 -73.968875'
     },
     {
-        license: 'AT9999',
-        type: 'car',
-        make: 'Google',
-        model: 'Quick Transport',
-        miles: '15600',
-        latLong: '40.773272 -73.968875'
-    },
-    {
-        license: 'AT-AT',
-        type: 'car',
-        make: 'Google',
-        model: 'Quick Transport',
-        miles: '15600',
-        latLong: '40.773272 -73.968875'
-    },
-    {
         license: 'AT2000',
         type: 'car',
         make: 'Uber',
@@ -68,21 +52,7 @@ export let fleet = [
         type: 'car',
         make: 'Lyft',
         model: 'Pick U Up',
-        miles: '>>>sda400',
-        latLong: '40.774036 -73.967319'
-    },
-    {
-        license: 'WEST',
-        type: 'horse',
-        make: 'FORD',
-        model: 'Pick U Up',
-        miles: 'Infinite',
-        latLong: '40.774036 -73.967319'
-    },
-    {
-        license: 'FUTURECAR',
-        type: 'car',
-        miles: '400000',
+        miles: '400',
         latLong: '40.774036 -73.967319'
     }
 ];
