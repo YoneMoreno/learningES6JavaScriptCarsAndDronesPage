@@ -3,10 +3,16 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/dist/src/app.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/classes/Drone.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/classes/Car.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/classes/Vehicle.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/dist/src/app.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/classes/Drone.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/classes/Car.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/classes/Vehicle.js" />
     </CLASSES>
     <SOURCES />
   </library>

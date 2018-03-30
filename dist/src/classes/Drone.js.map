@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/classes/Drone.js"],"names":["Drone"],"mappings":";;;;;;;AAAA;;;;;;;;IAEaA,K,WAAAA,K","file":"Drone.js","sourcesContent":["import {Vehicle} from \"./Vehicle.js\";\r\n\r\nexport class Drone extends Vehicle{\r\n\r\n}"]}

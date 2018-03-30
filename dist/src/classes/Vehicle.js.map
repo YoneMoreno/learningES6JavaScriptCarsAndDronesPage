@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/classes/Vehicle.js"],"names":["Vehicle"],"mappings":";;;;;;;;IAAaA,O,WAAAA,O","file":"Vehicle.js","sourcesContent":["export class Vehicle {\r\n}"]}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/classes/Car.js"],"names":["Car"],"mappings":";;;;;;;AAAA;;;;;;;;IAEaA,G,WAAAA,G","file":"Car.js","sourcesContent":["import {Vehicle} from \"./Vehicle.js\";\r\n\r\nexport class Car extends Vehicle {\r\n}\r\n"]}
