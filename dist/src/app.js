@@ -48,6 +48,7 @@ var Car = function (_Vehicle) {
     }], [{
         key: 'getCompanyName',
         value: function getCompanyName() {
+            _get(Car.__proto__ || Object.getPrototypeOf(Car), 'getCompanyName', this).call(this);
             console.log('CAR company');
         }
     }]);
@@ -56,6 +57,5 @@ var Car = function (_Vehicle) {
 }(Vehicle);
 
 var c = new Car();
-c.start();
 Car.getCompanyName();
 //# sourceMappingURL=app.js.map
