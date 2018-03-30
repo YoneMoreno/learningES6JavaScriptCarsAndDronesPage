@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
@@ -6,10 +6,10 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var Vehicle = function Vehicle(licenseNum) {
+var Vehicle = function Vehicle() {
     _classCallCheck(this, Vehicle);
 
-    this.licenseNum = licenseNum;
+    this.gpsEnabled = true;
 };
 
 var Drone = function (_Vehicle) {
@@ -27,15 +27,15 @@ var Drone = function (_Vehicle) {
 var Car = function (_Vehicle2) {
     _inherits(Car, _Vehicle2);
 
-    function Car(licenseNum) {
+    function Car() {
         _classCallCheck(this, Car);
 
-        return _possibleConstructorReturn(this, (Car.__proto__ || Object.getPrototypeOf(Car)).call(this, licenseNum));
+        return _possibleConstructorReturn(this, (Car.__proto__ || Object.getPrototypeOf(Car)).call(this));
     }
 
     return Car;
 }(Vehicle);
 
-var c = new Car('A1');
-console.log(c.licenseNum);
+var c = new Car();
+console.log(c.gpsEnabled);
 //# sourceMappingURL=app.js.map
