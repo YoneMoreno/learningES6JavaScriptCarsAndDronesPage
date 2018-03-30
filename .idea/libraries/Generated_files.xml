@@ -655,6 +655,7 @@
         <item url="file://$PROJECT_DIR$/dist/node_modules/traceur/dist/commonjs/codegeneration/generator/BreakContinueTransformer.js" />
         <item url="file://$PROJECT_DIR$/dist/node_modules/.staging/jquery-9bf03e04/src/css/hiddenVisibleSelectors.js" />
         <item url="file://$PROJECT_DIR$/dist/node_modules/.staging/jquery-9bf03e04/src/css/adjustCSS.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/ui/image.js" />
         <item url="file://$PROJECT_DIR$/dist/node_modules/traceur/dist/commonjs/codegeneration/generator/FinallyState.js" />
         <item url="file://$PROJECT_DIR$/dist/node_modules/.staging/jquery-9bf03e04/src/var/concat.js" />
         <item url="file://$PROJECT_DIR$/dist/node_modules/traceur/dist/commonjs/codegeneration/generator/CPSTransformer.js" />
@@ -1560,6 +1561,7 @@
       <root url="file://$PROJECT_DIR$/dist/node_modules/traceur/dist/commonjs/codegeneration/generator/BreakContinueTransformer.js" />
       <root url="file://$PROJECT_DIR$/dist/node_modules/.staging/jquery-9bf03e04/src/css/hiddenVisibleSelectors.js" />
       <root url="file://$PROJECT_DIR$/dist/node_modules/.staging/jquery-9bf03e04/src/css/adjustCSS.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/ui/image.js" />
       <root url="file://$PROJECT_DIR$/dist/node_modules/traceur/dist/commonjs/codegeneration/generator/FinallyState.js" />
       <root url="file://$PROJECT_DIR$/dist/node_modules/.staging/jquery-9bf03e04/src/var/concat.js" />
       <root url="file://$PROJECT_DIR$/dist/node_modules/traceur/dist/commonjs/codegeneration/generator/CPSTransformer.js" />
