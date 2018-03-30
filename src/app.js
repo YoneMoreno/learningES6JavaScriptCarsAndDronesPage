@@ -9,7 +9,10 @@ dataService.loadData(fleet);
 
 //let car = dataService.getCarByLicense('AT2020');
 
-let cars = dataService.getCarsSortedByLicense();
+//let cars = dataService.getCarsSortedByLicense();
+
+let cars = dataService.filterCarsByMake('e');
+
 for (let car of cars) {
-    console.log(car.license);
+    console.log(car.make);
 }

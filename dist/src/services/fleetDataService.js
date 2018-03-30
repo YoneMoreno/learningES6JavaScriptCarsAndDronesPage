@@ -45,6 +45,13 @@ var FleetDataService = exports.FleetDataService = function () {
             });
         }
     }, {
+        key: "filterCarsByMake",
+        value: function filterCarsByMake(filter) {
+            return this.cars.filter(function (car) {
+                return car.make.indexOf(filter) >= 0;
+            });
+        }
+    }, {
         key: "loadData",
         value: function loadData(fleet) {
             var _iteratorNormalCompletion = true;

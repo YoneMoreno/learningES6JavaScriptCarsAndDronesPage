@@ -13,7 +13,10 @@ dataService.loadData(_fleetData.fleet);
 
 //let car = dataService.getCarByLicense('AT2020');
 
-var cars = dataService.getCarsSortedByLicense();
+//let cars = dataService.getCarsSortedByLicense();
+
+var cars = dataService.filterCarsByMake('e');
+
 var _iteratorNormalCompletion = true;
 var _didIteratorError = false;
 var _iteratorError = undefined;
@@ -22,7 +25,7 @@ try {
     for (var _iterator = cars[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
         var car = _step.value;
 
-        console.log(car.license);
+        console.log(car.make);
     }
 } catch (err) {
     _didIteratorError = true;
