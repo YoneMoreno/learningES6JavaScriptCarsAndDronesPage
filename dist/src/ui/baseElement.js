@@ -27,6 +27,7 @@ var BaseElement = exports.BaseElement = function () {
         value: function appendToElement(el) {
             this.createElement();
             el.append(this.element);
+            this.enableJS();
         }
     }, {
         key: 'createElement',
@@ -38,6 +39,11 @@ var BaseElement = exports.BaseElement = function () {
         key: 'getElementString',
         value: function getElementString() {
             throw 'Please override getElementString() in BaseElement';
+        }
+    }, {
+        key: 'enableJS',
+        value: function enableJS() {
+            componentHandler.upgradeElement(this.element[0]);
         }
     }]);
 
