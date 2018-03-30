@@ -20,6 +20,11 @@ var Vehicle = function () {
         value: function start() {
             console.log('starting vehicle');
         }
+    }], [{
+        key: 'getCompanyName',
+        value: function getCompanyName() {
+            console.log('My company');
+        }
     }]);
 
     return Vehicle;
@@ -47,4 +52,5 @@ var Car = function (_Vehicle) {
 
 var c = new Car();
 c.start();
+Car.getCompanyName();
 //# sourceMappingURL=app.js.map

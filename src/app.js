@@ -2,6 +2,9 @@ class Vehicle{
     start(){
         console.log('starting vehicle');
     }
+    static getCompanyName(){
+        console.log('My company');
+    }
 }
 
 class Car extends Vehicle{
@@ -12,3 +15,4 @@ class Car extends Vehicle{
 }
 let c = new Car();
 c.start();
+Car.getCompanyName();
