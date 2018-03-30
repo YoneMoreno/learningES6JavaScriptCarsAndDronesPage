@@ -68,18 +68,28 @@ var FleetDataService = exports.FleetDataService = function () {
     }, {
         key: "loadCar",
         value: function loadCar(car) {
-            var c = new _Car.Car(car.license, car.model, car.latLong);
-            c.make = car.make;
-            c.miles = car.miles;
-            return c;
+            try {
+                var c = new _Car.Car(car.license, car.model, car.latLong);
+                c.make = car.make;
+                c.miles = car.miles;
+                return c;
+            } catch (e) {
+                this.errors.push(new _DataError.DataError('error loading car', e));
+            }
+            return null;
         }
     }, {
         key: "loadDrone",
         value: function loadDrone(drone) {
-            var d = new _Drone.Drone(drone.license, drone.model, drone.latLong);
-            d.airTimeHours = drone.airTimeHours;
-            d.base = drone.base;
-            return d;
+            try {
+                var d = new _Drone.Drone(drone.license, drone.model, drone.latLong);
+                d.airTimeHours = drone.airTimeHours;
+                d.base = drone.base;
+                return d;
+            } catch (e) {
+                this.errors.push(new _DataError.DataError('error loading drones', e));
+            }
+            return null;
         }
     }]);
 

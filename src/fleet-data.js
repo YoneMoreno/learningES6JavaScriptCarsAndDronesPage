@@ -54,5 +54,19 @@ export let fleet = [
         model: 'Pick U Up',
         miles: '400',
         latLong: '40.774036 -73.967319'
+    },
+    {
+        license: 'WEST',
+        type: 'horse',
+        make: 'FORD',
+        model: 'Pick U Up',
+        miles: 'Infinite',
+        latLong: '40.774036 -73.967319'
+    },
+    {
+        license: 'FUTURECAR',
+        type: 'car',
+        miles: '400000',
+        latLong: '40.774036 -73.967319'
     }
 ];
