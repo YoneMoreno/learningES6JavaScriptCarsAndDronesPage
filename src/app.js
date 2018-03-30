@@ -5,7 +5,9 @@ class Vehicle{
 }
 
 class Car extends Vehicle{
-
+    start(){
+        console.log('STARTING car');
+    }
 }
 let c = new Car();
 c.start();

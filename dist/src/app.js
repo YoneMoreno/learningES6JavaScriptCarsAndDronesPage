@@ -32,6 +32,13 @@ var Car = function (_Vehicle) {
         return _possibleConstructorReturn(this, (Car.__proto__ || Object.getPrototypeOf(Car)).apply(this, arguments));
     }
 
+    _createClass(Car, [{
+        key: 'start',
+        value: function start() {
+            console.log('STARTING car');
+        }
+    }]);
+
     return Car;
 }(Vehicle);
 
