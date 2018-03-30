@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -7,7 +7,7 @@ exports.Button = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _baseElement = require("./baseElement.js");
+var _baseElement = require('./baseElement.js');
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -24,13 +24,19 @@ var Button = exports.Button = function (_BaseElement) {
         var _this = _possibleConstructorReturn(this, (Button.__proto__ || Object.getPrototypeOf(Button)).call(this));
 
         _this.title = title;
+        _this.styleString = '';
         return _this;
     }
 
     _createClass(Button, [{
-        key: "getElementString",
+        key: 'getElementString',
         value: function getElementString() {
-            return "<button class=\"mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent\">\n                    " + this.title + "\n                </button>";
+            return '\n            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"\n                style="' + this.styleString + '">\n                ' + this.title + '\n            </button>\n        ';
+        }
+    }, {
+        key: 'setStyleString',
+        value: function setStyleString(style) {
+            this.styleString = style;
         }
     }]);
 

@@ -671,6 +671,8 @@
         <item url="file://$PROJECT_DIR$/dist/node_modules/.staging/jquery-9bf03e04/src/var/class2type.js" />
         <item url="file://$PROJECT_DIR$/dist/src/ui/google-maps.js7.js" />
         <item url="file://$PROJECT_DIR$/dist/node_modules/.staging/jquery-9bf03e04/src/var/hasOwn.js" />
+        <item url="file://$PROJECT_DIR$/dist/home-page.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/home-page.js" />
         <item url="file://$PROJECT_DIR$/dist/src/ui/google-maps.js" />
         <item url="file://$PROJECT_DIR$/dist/src/framework/application-base.js" />
         <item url="file://$PROJECT_DIR$/dist/node_modules/traceur/dist/browser/System.js" />
@@ -1582,6 +1584,8 @@
       <root url="file://$PROJECT_DIR$/dist/node_modules/.staging/jquery-9bf03e04/src/var/class2type.js" />
       <root url="file://$PROJECT_DIR$/dist/src/ui/google-maps.js7.js" />
       <root url="file://$PROJECT_DIR$/dist/node_modules/.staging/jquery-9bf03e04/src/var/hasOwn.js" />
+      <root url="file://$PROJECT_DIR$/dist/home-page.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/home-page.js" />
       <root url="file://$PROJECT_DIR$/dist/src/ui/google-maps.js" />
       <root url="file://$PROJECT_DIR$/dist/src/framework/application-base.js" />
       <root url="file://$PROJECT_DIR$/dist/node_modules/traceur/dist/browser/System.js" />
