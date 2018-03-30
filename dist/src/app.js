@@ -24,15 +24,16 @@ var Drone = function (_Vehicle) {
     return Drone;
 }(Vehicle);
 
-console.log('constructing vehicle');
-
 var Car = function (_Vehicle2) {
     _inherits(Car, _Vehicle2);
 
     function Car() {
         _classCallCheck(this, Car);
 
-        return _possibleConstructorReturn(this, (Car.__proto__ || Object.getPrototypeOf(Car)).apply(this, arguments));
+        var _this2 = _possibleConstructorReturn(this, (Car.__proto__ || Object.getPrototypeOf(Car)).call(this));
+
+        console.log('constructing car');
+        return _this2;
     }
 
     return Car;
