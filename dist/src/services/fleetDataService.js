@@ -25,6 +25,13 @@ var FleetDataService = exports.FleetDataService = function () {
     }
 
     _createClass(FleetDataService, [{
+        key: "getCarByLicense",
+        value: function getCarByLicense(license) {
+            return this.cars.find(function (car) {
+                return car.license === license;
+            });
+        }
+    }, {
         key: "loadData",
         value: function loadData(fleet) {
             var _iteratorNormalCompletion = true;
