@@ -34,10 +34,12 @@ var FleetDataService = exports.FleetDataService = function () {
 
                     switch (data.type) {
                         case 'car':
-                            this.cars.push(data);
+                            var car = this.loadCar(data);
+                            this.cars.push(car);
                             break;
                         case 'drone':
-                            this.drones.push(data);
+                            var drone = this.loadDrone(data);
+                            this.drones.push(drone);
                             break;
                     }
                 }
@@ -55,6 +57,22 @@ var FleetDataService = exports.FleetDataService = function () {
                     }
                 }
             }
+        }
+    }, {
+        key: "loadCar",
+        value: function loadCar(car) {
+            var c = new _Car.Car(car.license, car.model, car.latLong);
+            c.make = car.make;
+            c.miles = car.miles;
+            return c;
+        }
+    }, {
+        key: "loadDrone",
+        value: function loadDrone(drone) {
+            var d = new _Drone.Drone(drone.license, drone.model, drone.latLong);
+            d.airTimeHours = drone.airTimeHours;
+            d.base = drone.base;
+            return d;
         }
     }]);
 
