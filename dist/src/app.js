@@ -11,6 +11,31 @@ var _fleetDataService = require("./services/fleetDataService.js");
 var dataService = new _fleetDataService.FleetDataService();
 dataService.loadData(_fleetData.fleet);
 
-var car = dataService.getCarByLicense('AT2020');
-console.log(car);
+//let car = dataService.getCarByLicense('AT2020');
+
+var cars = dataService.getCarsSortedByLicense();
+var _iteratorNormalCompletion = true;
+var _didIteratorError = false;
+var _iteratorError = undefined;
+
+try {
+    for (var _iterator = cars[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+        var car = _step.value;
+
+        console.log(car.license);
+    }
+} catch (err) {
+    _didIteratorError = true;
+    _iteratorError = err;
+} finally {
+    try {
+        if (!_iteratorNormalCompletion && _iterator.return) {
+            _iterator.return();
+        }
+    } finally {
+        if (_didIteratorError) {
+            throw _iteratorError;
+        }
+    }
+}
 //# sourceMappingURL=app.js.map

@@ -32,6 +32,19 @@ var FleetDataService = exports.FleetDataService = function () {
             });
         }
     }, {
+        key: "getCarsSortedByLicense",
+        value: function getCarsSortedByLicense() {
+            return this.cars.sort(function (car1, car2) {
+                if (car1.license < car2.license) {
+                    return -1;
+                }
+                if (car1.license > car2.license) {
+                    return 1;
+                }
+                return 0;
+            });
+        }
+    }, {
         key: "loadData",
         value: function loadData(fleet) {
             var _iteratorNormalCompletion = true;
