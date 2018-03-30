@@ -9,6 +9,11 @@ class App extends ApplicationBase{
         this.dataService = new FleetDataService();
         this.dataService.loadData(fleet);
         console.log(fleet);
+
+        this.addRoute('Home', null, true);
+        this.addRoute('Cars', null);
+        this.addRoute('Drones', null);
+        this.addRoute('Map', null);
     }
 }
 

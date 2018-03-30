@@ -34,6 +34,11 @@ var App = function (_ApplicationBase) {
         _this.dataService = new _fleetDataService.FleetDataService();
         _this.dataService.loadData(_fleetData.fleet);
         console.log(_fleetData.fleet);
+
+        _this.addRoute('Home', null, true);
+        _this.addRoute('Cars', null);
+        _this.addRoute('Drones', null);
+        _this.addRoute('Map', null);
         return _this;
     }
 

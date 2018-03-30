@@ -17,9 +17,24 @@ var ApplicationBase = exports.ApplicationBase = function () {
 
         this.title = title;
         this.titleBar = new _titleBar.TitleBar(this.title);
+        this.routeMap = {};
+        this.defaultRoute = null;
     }
 
     _createClass(ApplicationBase, [{
+        key: "addRoute",
+        value: function addRoute(id, pageObject) {
+            var defaultRoute = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+
+            this.titleBar.addLink(id, '');
+
+            this.routeMap[id] = pageObject;
+
+            if (defaultRoute) {
+                this.defaultRoute = defaultRoute;
+            }
+        }
+    }, {
         key: "show",
         value: function show(element) {
             this.titleBar.appendToElement(element);
