@@ -669,7 +669,9 @@
         <item url="file://$PROJECT_DIR$/dist/src/ui/data-table.js" />
         <item url="file://$PROJECT_DIR$/dist/node_modules/.staging/jquery-9bf03e04/src/var/rcssNum.js" />
         <item url="file://$PROJECT_DIR$/dist/node_modules/.staging/jquery-9bf03e04/src/var/class2type.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/ui/google-maps.js7.js" />
         <item url="file://$PROJECT_DIR$/dist/node_modules/.staging/jquery-9bf03e04/src/var/hasOwn.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/ui/google-maps.js" />
         <item url="file://$PROJECT_DIR$/dist/node_modules/traceur/dist/browser/System.js" />
         <item url="file://$PROJECT_DIR$/dist/node_modules/traceur/dist/HTMLImportTranscoder.js" />
         <item url="file://$PROJECT_DIR$/dist/node_modules/traceur/dist/staticsemantics/validateParameters.js" />
@@ -1577,7 +1579,9 @@
       <root url="file://$PROJECT_DIR$/dist/src/ui/data-table.js" />
       <root url="file://$PROJECT_DIR$/dist/node_modules/.staging/jquery-9bf03e04/src/var/rcssNum.js" />
       <root url="file://$PROJECT_DIR$/dist/node_modules/.staging/jquery-9bf03e04/src/var/class2type.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/ui/google-maps.js7.js" />
       <root url="file://$PROJECT_DIR$/dist/node_modules/.staging/jquery-9bf03e04/src/var/hasOwn.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/ui/google-maps.js" />
       <root url="file://$PROJECT_DIR$/dist/node_modules/traceur/dist/browser/System.js" />
       <root url="file://$PROJECT_DIR$/dist/node_modules/traceur/dist/HTMLImportTranscoder.js" />
       <root url="file://$PROJECT_DIR$/dist/node_modules/traceur/dist/staticsemantics/validateParameters.js" />

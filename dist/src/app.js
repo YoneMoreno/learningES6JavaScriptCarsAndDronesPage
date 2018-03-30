@@ -12,24 +12,13 @@ var _fleetDataService = require("./services/fleet-data-service.js");
 
 var _fleetData = require("./fleet-data.js");
 
-var headers = "License Make Model Miles".split(" ");
+var _googleMaps = require("./ui/google-maps.js");
+
 var dataService = new _fleetDataService.FleetDataService();
 dataService.loadData(_fleetData.fleet);
 console.log(_fleetData.fleet);
-var dt = new _dataTable.DataTable(headers, dataService.cars);
 
-dt.appendToElement($('body'));
-
-/*let titleBar = new TitleBar('App');
-titleBar.addLink('Home', '');
-titleBar.addLink('Cars', '');
-titleBar.addLink('Drones', '');
-titleBar.addLink('Map', '');
-titleBar.appendToElement($('body'));*/
-
-/*let b = new Button('Click me');
-b.appendToElement($('body'));
-
-let image = new Image('../images/drone.jpg');
-image.appendToElement($('body'));*/
+var centerOfMap = { lat: 40.783661, lng: -73.965883 };
+var map = new _googleMaps.GoogleMaps(centerOfMap, dataService.cars);
+map.appendToElement($('body'));
 //# sourceMappingURL=app.js.map
