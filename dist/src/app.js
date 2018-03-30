@@ -24,6 +24,8 @@ var Drone = function (_Vehicle) {
     return Drone;
 }(Vehicle);
 
+console.log('constructing vehicle');
+
 var Car = function (_Vehicle2) {
     _inherits(Car, _Vehicle2);
 
