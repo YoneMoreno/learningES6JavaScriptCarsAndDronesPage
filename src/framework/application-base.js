@@ -5,4 +5,7 @@ export class ApplicationBase{
         this.title = title;
         this.titleBar = new TitleBar(this.title);
     }
+    show(element){
+        this.titleBar.appendToElement(element);
+    }
 }
