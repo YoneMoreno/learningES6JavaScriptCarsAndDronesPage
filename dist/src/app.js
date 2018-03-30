@@ -8,8 +8,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 var Vehicle = function Vehicle() {
     _classCallCheck(this, Vehicle);
-
-    console.log('constructing vehicle');
 };
 
 var Drone = function (_Vehicle) {
