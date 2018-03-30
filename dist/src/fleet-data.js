@@ -50,7 +50,7 @@ var fleet = exports.fleet = [{
     type: 'car',
     make: 'Lyft',
     model: 'Pick U Up',
-    miles: '400',
+    miles: '>>>sda400',
     latLong: '40.774036 -73.967319'
 }, {
     license: 'WEST',

@@ -68,7 +68,7 @@ try {
     for (var _iterator3 = dataService.errors[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
         var e = _step3.value;
 
-        console.log(e.message);
+        console.log(e.message, e.data);
     }
 } catch (err) {
     _didIteratorError3 = true;

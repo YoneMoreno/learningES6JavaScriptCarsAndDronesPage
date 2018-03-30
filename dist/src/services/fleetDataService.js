@@ -39,7 +39,9 @@ var FleetDataService = exports.FleetDataService = function () {
                         case 'car':
                             if (this.validateCarData(data)) {
                                 var car = this.loadCar(data);
-                                this.cars.push(car);
+                                if (car) {
+                                    this.cars.push(car);
+                                }
                             } else {
                                 var _e = new _DataError.DataError('Car data is not valid', data);
                                 this.errors.push(_e);
@@ -98,7 +100,7 @@ var FleetDataService = exports.FleetDataService = function () {
                     var field = _step2.value;
 
                     if (!car[field]) {
-                        this.errors.push(new _DataError.DataError("invalid field of car: " + field), car);
+                        this.errors.push(new _DataError.DataError("invalid field of car: " + field, car));
                         hasErrors = true;
                     }
                 }
@@ -116,6 +118,13 @@ var FleetDataService = exports.FleetDataService = function () {
                     }
                 }
             }
+
+            if (Number.isNaN(Number.parseFloat(car.miles))) {
+                this.errors.push(new _DataError.DataError('miles is not a number', car));
+                hasErrors = true;
+            }
+
+            return !hasErrors;
         }
     }, {
         key: "loadDrone",

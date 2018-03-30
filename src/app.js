@@ -13,5 +13,5 @@ for(let drone of dataService.drones){
     console.log(drone.license);
 }
 for(let e of dataService.errors){
-    console.log(e.message);
+    console.log(e.message, e.data);
 }
