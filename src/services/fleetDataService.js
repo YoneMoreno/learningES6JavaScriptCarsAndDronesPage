@@ -14,8 +14,13 @@ export class FleetDataService {
         for (let data of fleet) {
             switch (data.type) {
                 case 'car':
-                    let car = this.loadCar(data);
-                    this.cars.push(car);
+                    if(this.validateCarData(data)) {
+                        let car = this.loadCar(data);
+                        this.cars.push(car);
+                    }else{
+                        let e = new DataError('Car data is not valid',data);
+                        this.errors.push(e);
+                    }
                     break;
                 case 'drone':
                     let drone = this.loadDrone(data);
@@ -39,6 +44,19 @@ export class FleetDataService {
             this.errors.push(new DataError('error loading car', e));
         }
         return null;
+    }
+
+    validateCarData(car){
+        let requiredProps = 'license make model miles latLong'.split(' ');
+        let hasErrors = false;
+        
+        for(let field of requiredProps){
+            if(!car[field]){
+                this.errors.push(new DataError(`invalid field of car: ${field}`), car);
+                hasErrors = true;
+            }
+        }
+
     }
 
     loadDrone(drone) {

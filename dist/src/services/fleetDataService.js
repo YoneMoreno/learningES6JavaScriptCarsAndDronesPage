@@ -37,8 +37,13 @@ var FleetDataService = exports.FleetDataService = function () {
 
                     switch (data.type) {
                         case 'car':
-                            var car = this.loadCar(data);
-                            this.cars.push(car);
+                            if (this.validateCarData(data)) {
+                                var car = this.loadCar(data);
+                                this.cars.push(car);
+                            } else {
+                                var _e = new _DataError.DataError('Car data is not valid', data);
+                                this.errors.push(_e);
+                            }
                             break;
                         case 'drone':
                             var drone = this.loadDrone(data);
@@ -77,6 +82,40 @@ var FleetDataService = exports.FleetDataService = function () {
                 this.errors.push(new _DataError.DataError('error loading car', e));
             }
             return null;
+        }
+    }, {
+        key: "validateCarData",
+        value: function validateCarData(car) {
+            var requiredProps = 'license make model miles latLong'.split(' ');
+            var hasErrors = false;
+
+            var _iteratorNormalCompletion2 = true;
+            var _didIteratorError2 = false;
+            var _iteratorError2 = undefined;
+
+            try {
+                for (var _iterator2 = requiredProps[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                    var field = _step2.value;
+
+                    if (!car[field]) {
+                        this.errors.push(new _DataError.DataError("invalid field of car: " + field), car);
+                        hasErrors = true;
+                    }
+                }
+            } catch (err) {
+                _didIteratorError2 = true;
+                _iteratorError2 = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                        _iterator2.return();
+                    }
+                } finally {
+                    if (_didIteratorError2) {
+                        throw _iteratorError2;
+                    }
+                }
+            }
         }
     }, {
         key: "loadDrone",
