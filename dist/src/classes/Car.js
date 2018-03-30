@@ -1,7 +1,7 @@
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 exports.Car = undefined;
 
@@ -14,14 +14,18 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Car = exports.Car = function (_Vehicle) {
-  _inherits(Car, _Vehicle);
+    _inherits(Car, _Vehicle);
 
-  function Car() {
-    _classCallCheck(this, Car);
+    function Car(license, model, latLong) {
+        _classCallCheck(this, Car);
 
-    return _possibleConstructorReturn(this, (Car.__proto__ || Object.getPrototypeOf(Car)).apply(this, arguments));
-  }
+        var _this = _possibleConstructorReturn(this, (Car.__proto__ || Object.getPrototypeOf(Car)).call(this, license, model, latLong));
 
-  return Car;
+        _this.make = null;
+        _this.miles = null;
+        return _this;
+    }
+
+    return Car;
 }(_Vehicle2.Vehicle);
 //# sourceMappingURL=Car.js.map

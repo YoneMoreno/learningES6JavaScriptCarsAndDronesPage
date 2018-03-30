@@ -1,7 +1,7 @@
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 exports.Drone = undefined;
 
@@ -14,14 +14,18 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Drone = exports.Drone = function (_Vehicle) {
-  _inherits(Drone, _Vehicle);
+    _inherits(Drone, _Vehicle);
 
-  function Drone() {
-    _classCallCheck(this, Drone);
+    function Drone(license, model, latLong) {
+        _classCallCheck(this, Drone);
 
-    return _possibleConstructorReturn(this, (Drone.__proto__ || Object.getPrototypeOf(Drone)).apply(this, arguments));
-  }
+        var _this = _possibleConstructorReturn(this, (Drone.__proto__ || Object.getPrototypeOf(Drone)).call(this, license, model, latLong));
 
-  return Drone;
+        _this.airTimeHours = null;
+        _this.base = null;
+        return _this;
+    }
+
+    return Drone;
 }(_Vehicle2.Vehicle);
 //# sourceMappingURL=Drone.js.map
