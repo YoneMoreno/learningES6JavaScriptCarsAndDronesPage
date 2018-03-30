@@ -5,6 +5,7 @@
         <item url="file://$PROJECT_DIR$/dist/src/app.js" />
         <item url="file://$PROJECT_DIR$/dist/src/classes/Drone.js" />
         <item url="file://$PROJECT_DIR$/dist/src/classes/Car.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/fleet-data.js" />
         <item url="file://$PROJECT_DIR$/dist/src/classes/Vehicle.js" />
         <item url="file://$PROJECT_DIR$/dist/src/services/fleetDataService.js" />
       </sourceFilesUrls>
@@ -13,6 +14,7 @@
       <root url="file://$PROJECT_DIR$/dist/src/app.js" />
       <root url="file://$PROJECT_DIR$/dist/src/classes/Drone.js" />
       <root url="file://$PROJECT_DIR$/dist/src/classes/Car.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/fleet-data.js" />
       <root url="file://$PROJECT_DIR$/dist/src/classes/Vehicle.js" />
       <root url="file://$PROJECT_DIR$/dist/src/services/fleetDataService.js" />
     </CLASSES>

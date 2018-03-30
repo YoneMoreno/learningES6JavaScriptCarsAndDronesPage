@@ -4,9 +4,7 @@ var _Car = require("./classes/Car.js");
 
 var _Drone = require("./classes/Drone.js");
 
-var c = new _Car.Car();
-var d = new _Drone.Drone();
+var _fleetData = require("./fleet-data.js");
 
-console.log(c);
-console.log(d);
+console.log(_fleetData.fleet);
 //# sourceMappingURL=app.js.map
