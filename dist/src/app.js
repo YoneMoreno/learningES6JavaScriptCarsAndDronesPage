@@ -6,8 +6,10 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var Vehicle = function Vehicle() {
+var Vehicle = function Vehicle(licenseNum) {
     _classCallCheck(this, Vehicle);
+
+    this.licenseNum = licenseNum;
 };
 
 var Drone = function (_Vehicle) {
@@ -25,17 +27,15 @@ var Drone = function (_Vehicle) {
 var Car = function (_Vehicle2) {
     _inherits(Car, _Vehicle2);
 
-    function Car() {
+    function Car(licenseNum) {
         _classCallCheck(this, Car);
 
-        var _this2 = _possibleConstructorReturn(this, (Car.__proto__ || Object.getPrototypeOf(Car)).call(this));
-
-        console.log('constructing car');
-        return _this2;
+        return _possibleConstructorReturn(this, (Car.__proto__ || Object.getPrototypeOf(Car)).call(this, licenseNum));
     }
 
     return Car;
 }(Vehicle);
 
-var c = new Car();
+var c = new Car('A1');
+console.log(c.licenseNum);
 //# sourceMappingURL=app.js.map
